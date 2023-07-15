@@ -120,7 +120,7 @@ app.put("/api/persons/:id", (req, res, next) => {
 app.use(unknownEndpoint);
 app.use(errorHandler);
 
-PORT = 3001 || process.env.PORT;
+PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
 	console.log(`Server running on port ${PORT}.`);
 });
