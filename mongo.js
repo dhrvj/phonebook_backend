@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 // const url = `mongodb+srv://gs:${password}@cluster0.z2ihpgt.mongodb.net/noteApp?retryWrites=true&w=majority`;
 
 mongoose.set("strictQuery", false);
-mongoose.connect(url);
+await mongoose.connect(url);
 
 const personSchema = new mongoose.Schema({
 	name: String,
