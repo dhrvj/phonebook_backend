@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
-const password = process.argv[2];
-const url = `mongodb+srv://gs:${password}@cluster0.z2ihpgt.mongodb.net/noteApp?retryWrites=true&w=majority`;
+// const password = process.argv[2];
+// const url = `mongodb+srv://gs:${password}@cluster0.z2ihpgt.mongodb.net/noteApp?retryWrites=true&w=majority`;
 
 mongoose.set("strictQuery", false);
 mongoose.connect(url);
